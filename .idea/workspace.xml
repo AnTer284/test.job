@@ -326,6 +326,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
@@ -375,18 +376,17 @@
       <updated>1563037644920</updated>
       <workItem from="1563037647042" duration="6043000" />
       <workItem from="1563094720518" duration="430000" />
-      <workItem from="1563095241714" duration="18079000" />
+      <workItem from="1563095241714" duration="18324000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24552000" />
+    <option name="totallyTimeSpent" value="24797000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="71" y="-5" width="1849" height="1085" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30476192" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30476192" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -399,7 +399,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32910052" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32910052" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />

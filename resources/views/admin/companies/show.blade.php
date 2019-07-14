@@ -44,7 +44,7 @@
 
                         @if (Auth::user())
 
-                        Комментарии: <br>
+                        Комментарии компании:  <br>
 
                             @foreach ($company->comments as $comment)
 
