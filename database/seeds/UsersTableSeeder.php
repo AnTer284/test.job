@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use App\User;
 
 class UsersTableSeeder extends Seeder
 {
@@ -13,7 +14,7 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
 
-        DB::table('users')->insert([
+        User::insert([
 
             'name' => 'intel',
             'email' => 'intel@gmail.com',
@@ -22,7 +23,7 @@ class UsersTableSeeder extends Seeder
 
         ]);
 
-        DB::table('users')->insert([
+        User::insert([
 
             'name' => 'apple',
             'email' => 'apple@gmail.com',
@@ -30,7 +31,8 @@ class UsersTableSeeder extends Seeder
             'company_id' => 2,
 
         ]);
-        DB::table('users')->insert([
+
+        User::insert([
 
             'name' => 'amd',
             'email' => 'amd@gmail.com',

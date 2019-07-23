@@ -4,6 +4,7 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
+use App\Company;
 
 class CompaniesTableSeeder extends Seeder
 {
@@ -14,21 +15,21 @@ class CompaniesTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('companies')->insert([
+        Company::insert([
             'company_name' => 'intel',
             'company_category' => 'computers',
             'company_description' => 'world largest company of producing electronics',
 
         ]);
 
-        DB::table('companies')->insert([
+        Company::insert([
             'company_name' => 'apple',
             'company_category' => 'computers',
             'company_description' => 'world largest company of producing electronics',
 
         ]);
 
-        DB::table('companies')->insert([
+        Company::insert([
             'company_name' => 'amd',
             'company_category' => 'computers',
             'company_description' => 'world largest company of producing electronics',

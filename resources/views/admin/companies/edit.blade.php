@@ -10,11 +10,11 @@
 
     <div class="container">
         <div class="row">
-
+    @if ($employer->id )
 
             <div class="col-md-9">
                 <div class="card">
-                    <div class="card-header">Edit employer #{{ $employer->id }}</div>
+                    <div class="card-header">Edit employer #{{ $employer->id  }}</div>
                     <div class="card-body">
                         <a href="{{ url('/admin/companies') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
                         <br />
@@ -39,6 +39,8 @@
                     </div>
                 </div>
             </div>
+
+    @endif
         </div>
     </div>
 

@@ -151,6 +151,6 @@ class EmployersController extends Controller
     {
         Employee::destroy($id);
 
-        return redirect('admin/employers')->with('flash_message', 'Employee deleted!');
+        return redirect('/')->with('flash_message', 'Employee deleted!');
     }
 }

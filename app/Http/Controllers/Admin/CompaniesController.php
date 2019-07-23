@@ -8,6 +8,8 @@ use App\Http\Controllers\Controller;
 use App\Company;
 use App\Comment;
 use Illuminate\Http\Request;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Support\Facades\Auth;
 
 class CompaniesController extends Controller
 {
@@ -92,7 +94,13 @@ class CompaniesController extends Controller
      */
     public function edit($id)
     {
-        $company = Company::findOrFail($id);
+
+
+        try {
+            $company = Company::findOrFail($id);
+        } catch (ModelNotFoundException $ex) {
+            return redirect('/');
+        }
 
         return view('admin.companies.edit', compact('company'));
     }
@@ -135,6 +143,8 @@ class CompaniesController extends Controller
         $company->employeers()->delete();
 
         $company->delete();
+
+        Auth::logout();
 
 
         return redirect('admin/companies')->with('flash_message', 'Company deleted!');

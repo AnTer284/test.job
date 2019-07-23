@@ -22,6 +22,10 @@ class CreateCompaniesTable extends Migration
             $table->text('company_description')->nullable();
             $table->text('company_comment')->nullable();
             $table->string('image')->nullable();
+
+
+
+
             });
     }
 

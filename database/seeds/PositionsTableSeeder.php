@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use App\Position;
 
 class PositionsTableSeeder extends Seeder
 {
@@ -12,32 +13,32 @@ class PositionsTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('positions')->insert([
+        Position::insert([
             'position' => 'manager',
             'employee_id' => '1',
         ]);
 
-        DB::table('positions')->insert([
+        Position::insert([
             'position' => 'engineer',
             'employee_id' => '2',
         ]);
 
-        DB::table('positions')->insert([
+        Position::insert([
             'position' => 'manager',
             'employee_id' => '3',
         ]);
 
-        DB::table('positions')->insert([
+        Position::insert([
             'position' => 'designer',
             'employee_id' => '4',
         ]);
 
-        DB::table('positions')->insert([
+        Position::insert([
             'position' => 'director',
             'employee_id' => '5',
         ]);
 
-        DB::table('positions')->insert([
+        Position::insert([
             'position' => 'engineer',
             'employee_id' => '6',
         ]);
